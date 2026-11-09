@@ -1,0 +1,24 @@
+{
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "budgets": [
+    600,
+    1800
+  ],
+  "lr_multipliers": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "neural_kinds": [
+    "full",
+    "without_stir",
+    "without_vmir",
+    "without_rcer"
+  ]
+}

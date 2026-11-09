@@ -1,0 +1,19 @@
+\begin{table*}[!t]
+\centering\footnotesize
+\caption{Module ablation results. $\Delta$MSE is the ablated model's MSE minus that of the full model trained in the same batch. Brackets show approximate adjusted 95\% paired intervals.}
+\label{tab:modules}
+\begin{tabular}{lcrrrr}
+\toprule
+Configuration & Updates & SODA MSE & GODAS MSE & SODA $\Delta$MSE [interval] & GODAS $\Delta$MSE [interval] \\
+\midrule
+Full ReMiST & 600 & \underline{0.4220} $\pm$ 0.0459 & \underline{0.4403} $\pm$ 0.0521 & -- & -- \\
+Full ReMiST & 1800 & \underline{0.4417} $\pm$ 0.0714 & \underline{0.4549} $\pm$ 0.0762 & -- & -- \\
+w/o STIR & 600 & 0.4340 $\pm$ 0.0548 & 0.4432 $\pm$ 0.0493 & +0.0120 [-0.0971, +0.1548] & +0.0029 [-0.1208, +0.1351] \\
+w/o STIR & 1800 & 0.4476 $\pm$ 0.0607 & 0.4594 $\pm$ 0.0595 & +0.0059 [-0.0895, +0.1037] & +0.0045 [-0.0976, +0.1160] \\
+w/o VMIR & 600 & \textbf{0.4116} $\pm$ 0.0401 & \textbf{0.4326} $\pm$ 0.0440 & -0.0104 [-0.0922, +0.0603] & -0.0077 [-0.0944, +0.0637] \\
+w/o VMIR & 1800 & \textbf{0.4026} $\pm$ 0.0324 & \textbf{0.4197} $\pm$ 0.0312 & -0.0391 [-0.1523, +0.0521] & -0.0352 [-0.1496, +0.0715] \\
+w/o RCER & 600 & 0.4575 $\pm$ 0.0626 & 0.4676 $\pm$ 0.0627 & +0.0356 [-0.0797, +0.1714] & +0.0274 [-0.0959, +0.1703] \\
+w/o RCER & 1800 & 0.4440 $\pm$ 0.0473 & 0.4574 $\pm$ 0.0479 & +0.0023 [-0.1483, +0.1476] & +0.0024 [-0.1511, +0.1426] \\
+\bottomrule
+\end{tabular}
+\end{table*}

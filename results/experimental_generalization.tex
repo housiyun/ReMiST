@@ -1,0 +1,18 @@
+\begin{table*}[!t]
+\centering\footnotesize
+\caption{Forecast results on held-out climate models. $\Delta$MSE is the direct forecast head's MSE minus ReMiST's MSE. Brackets show approximate adjusted 95\% paired intervals.}
+\label{tab:generalization}
+\begin{tabular}{lcrrrr}
+\toprule
+Held-out model & Updates & ReMiST MSE & Direct-head MSE & $\Delta$MSE [interval] & ACC (ReMiST / direct) \\
+\midrule
+CESM2 & 600 & \textbf{0.7223} $\pm$ 0.0218 & \underline{0.7263} $\pm$ 0.0342 & +0.0040 [-0.1332, +0.1001] & \textbf{0.7175} / \underline{0.7124} \\
+CESM2 & 1800 & \textbf{0.7151} $\pm$ 0.0242 & \underline{0.7438} $\pm$ 0.0357 & +0.0287 [-0.0686, +0.1240] & \textbf{0.7212} / \underline{0.7038} \\
+FIO-ESM-2-0 & 600 & \textbf{0.3600} $\pm$ 0.0531 & \underline{0.4094} $\pm$ 0.0225 & +0.0495 [-0.0319, +0.1436] & \textbf{0.7159} / \underline{0.6619} \\
+FIO-ESM-2-0 & 1800 & \textbf{0.3615} $\pm$ 0.0537 & \underline{0.4238} $\pm$ 0.0315 & +0.0622 [-0.0038, +0.1514] & \textbf{0.7209} / \underline{0.6580} \\
+E3SM-1-1 & 600 & \textbf{0.5170} $\pm$ 0.0490 & \underline{0.5751} $\pm$ 0.0259 & +0.0582 [-0.0497, +0.1526] & \textbf{0.5986} / \underline{0.5823} \\
+E3SM-1-1 & 1800 & \textbf{0.5184} $\pm$ 0.0223 & \underline{0.5252} $\pm$ 0.0121 & +0.0068 [-0.0618, +0.0717] & \textbf{0.6081} / \underline{0.5988} \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize Bold and underlining mark the best and second-best results within each held-out model and update budget, respectively.\end{minipage}
+\end{table*}

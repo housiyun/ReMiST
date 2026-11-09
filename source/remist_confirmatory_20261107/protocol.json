@@ -1,0 +1,37 @@
+{
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "budgets": [
+    600,
+    1800
+  ],
+  "lr_multipliers": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "neural_kinds": [
+    "remist",
+    "direct",
+    "ordinary"
+  ],
+  "inputs": {
+    "regional": {
+      "path": "inputs/default_server.pt",
+      "sha256": "42ba9607420dc5e5985836a908fd06c122186f76dc033adb6daf4f967ff6d690"
+    },
+    "spatial": {
+      "path": "inputs/raw_windows.pt",
+      "sha256": "ad09950746e0ed3ef868421901b4bf46c308081bf5c605be41bddf95ba3dba80"
+    },
+    "extended": {
+      "path": "inputs/bundle.pt",
+      "sha256": "5a609b3119f01fac30f031179e7a40406d4dbb727c5dab501d4e9cddb7a0af6d"
+    }
+  }
+}

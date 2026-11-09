@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\centering\footnotesize
+\caption{Computational cost on the same A6000 GPU.}
+\label{tab:efficiency}
+\begin{tabular}{lrrr}
+\toprule
+Model & \shortstack{Training\\(ms/update)} & \shortstack{Inference\\(ms/sample)} & \shortstack{Peak memory\\(MiB)} \\
+\midrule
+ReMiST & 69.8486 & 0.4573 & 902.7144 \\
+CNN & 3.8909 & 0.0159 & 457.7710 \\
+3D-Geoformer & 287.0923 & 1.5623 & 5235.7158 \\
+ENSO-CausalNet & 33.1249 & 0.3018 & 574.0962 \\
+Memformer & 9.5936 & 0.0692 & 455.3975 \\
+PatchTST-8D & \underline{3.1205} & \underline{0.0083} & \underline{398.6992} \\
+iTransformer-8D & \textbf{2.9892} & \textbf{0.0080} & \textbf{382.2236} \\
+\bottomrule
+\end{tabular}
+\end{table}

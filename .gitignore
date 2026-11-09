@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+**/data/
+**/inputs/
+**/jobs/
+**/weights/
+**/rebuild_inputs/
+**/provenance/source/
+**/provenance/source.tar.gz
+**/provenance/source_manifest.json
+**/provenance/manifest.json
+**/provenance/error.json
+*.pt
+*.pth
+*.npz

@@ -1,0 +1,28 @@
+\begin{table*}[!t]
+\centering\footnotesize
+\caption{Ni\~no3.4 index forecast results by model. MSE ($^\circ$C$^2$) is reported as the mean and standard deviation across seeds. ACC is reported as the mean across seeds.}
+\label{tab:overall}
+\begin{tabular}{llcrrrr}
+\toprule
+Model & Inputs & Updates & SODA MSE & SODA ACC & GODAS MSE & GODAS ACC \\
+\midrule
+Persistence & last state & -- & 0.8662 & 0.3551 & 0.8662 & 0.3551 \\
+Ridge & R+PC & -- & 0.4544 & 0.5712 & 0.4473 & 0.5838 \\
+CNN & R+S & 600 & 0.6108 $\pm$ 0.0844 & 0.5025 & 0.6157 $\pm$ 0.0872 & 0.5015 \\
+CNN & R+S & 1800 & 0.5540 $\pm$ 0.0623 & 0.5262 & 0.5601 $\pm$ 0.0700 & 0.5202 \\
+3D-Geoformer & R+S & 600 & 0.4213 $\pm$ 0.0363 & 0.6115 & 0.4238 $\pm$ 0.0372 & 0.6143 \\
+3D-Geoformer & R+S & 1800 & 0.4229 $\pm$ 0.0434 & \underline{0.6264} & 0.4273 $\pm$ 0.0457 & \textbf{0.6296} \\
+ENSO-CausalNet & R+S & 600 & \underline{0.4168} $\pm$ 0.0239 & \underline{0.6383} & \textbf{0.4205} $\pm$ 0.0289 & \textbf{0.6333} \\
+ENSO-CausalNet & R+S & 1800 & \textbf{0.4124} $\pm$ 0.0349 & 0.6043 & \textbf{0.4192} $\pm$ 0.0378 & 0.5976 \\
+PatchTST-8D & R & 600 & 0.4790 $\pm$ 0.0116 & 0.4930 & 0.4790 $\pm$ 0.0116 & 0.4930 \\
+PatchTST-8D & R & 1800 & 0.4770 $\pm$ 0.0148 & 0.4988 & 0.4770 $\pm$ 0.0148 & 0.4988 \\
+iTransformer-8D & R & 600 & 0.5401 $\pm$ 0.0207 & 0.4917 & 0.5533 $\pm$ 0.0234 & 0.4841 \\
+iTransformer-8D & R & 1800 & 0.5886 $\pm$ 0.0251 & 0.4977 & 0.6117 $\pm$ 0.0252 & 0.4890 \\
+Memformer & R+PC & 600 & 0.4639 $\pm$ 0.0149 & 0.5731 & 0.4740 $\pm$ 0.0130 & 0.5650 \\
+Memformer & R+PC & 1800 & 0.4266 $\pm$ 0.0351 & 0.6224 & 0.4393 $\pm$ 0.0355 & 0.6145 \\
+DESN-8D & R & -- & 0.6496 $\pm$ 0.0322 & 0.6136 & 0.6863 $\pm$ 0.0234 & 0.6029 \\
+ReMiST & R+S & 600 & \textbf{0.4080} $\pm$ 0.0529 & \textbf{0.6424} & \underline{0.4230} $\pm$ 0.0582 & \underline{0.6318} \\
+ReMiST & R+S & 1800 & \underline{0.4137} $\pm$ 0.0411 & \textbf{0.6303} & \underline{0.4263} $\pm$ 0.0469 & \underline{0.6215} \\
+\bottomrule
+\end{tabular}
+\end{table*}
